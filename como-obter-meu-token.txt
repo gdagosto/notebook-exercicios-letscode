@@ -1,0 +1,10 @@
+Abra o seu navegador e acesse o site do class
+https://class.letscode.com.br
+
+Feito seu login, abra as ferramentas de desenvolvedor do seu navegador
+(Normalmente, aperte F12 ou Ctrl+Shift+I).
+
+Na aba CONSOLE, cole o código a seguir:
+JSON.parse(window.localStorage.getItem("_session")).session
+
+Copie o resultado exibido no seu console e cole quando o programa te pedir seu token.
