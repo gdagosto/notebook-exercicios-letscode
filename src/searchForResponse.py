@@ -37,7 +37,7 @@ def searchForResponse(url: str, token: str, filePath: str):
         return erro
 
     if(r.text == ''):
-        return ['Erro! Não houve nenhum retorno da consulta', 'Provavelmente você precisa alterar seu token no arquivo altereAqui.py']
+        return ['Erro! Não houve nenhum retorno da consulta', 'Provavelmente você precisa alterar seu token. Delete o arquivo token.txt e execute o programa denovo.']
 
     with open(filePath, 'w', encoding='utf-8') as responseFile:
         responseFile.write(r.text)
